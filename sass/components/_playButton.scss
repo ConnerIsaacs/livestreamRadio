@@ -1,0 +1,25 @@
+
+.playButton, .keyboardShortcuts, .stepBack, .stepForward, .volume {
+    width:4rem;
+    height:4rem;
+
+    i{
+        font-size:2rem;
+        @include absoluteCenter;
+    }
+}
+.playButton::after{
+    @include absoluteCenter;
+    content:"";
+    width:0%;
+    height:0%;
+    background-color:rgba($color-white, .2);
+    border-radius:100%;
+    transition:.2s all;
+}
+.playButton:active::after{
+        content:"";
+       
+        height:100%;
+        width:100%;
+}

@@ -1,0 +1,22 @@
+*, *::after, *::before {
+    box-sizing:inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    //Defines what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    position:relative;
+    height:100vh;
+}
+
+.content {
+    position:relative;
+    margin-top:3rem;
+    padding: 0px 10rem 0px 10rem;
+}

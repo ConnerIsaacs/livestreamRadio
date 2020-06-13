@@ -1,0 +1,65 @@
+.input{
+    &__container{
+        height:100%;
+        width:60%;
+        display:flex;
+        justify-content:center;
+        position:relative;
+        flex-direction:column;
+        margin-top:2rem;
+    }
+    &__text{
+        width:100%;
+        border:none;
+        border-bottom:1px solid $color-primary;
+        outline:none;
+        transition:.2s padding;
+        transition-delay: .6s;
+        padding: 1rem 1rem 1rem 0rem;
+        &:focus{
+            transition-delay:.0s;
+            padding:1rem;
+        }
+    }
+    
+    &__border{
+        position:absolute;
+        width:100%;
+        height:0;
+        bottom:0;
+        transition:.2s all ease-in-out;
+        transition-delay: .4s;
+        border-left:1px solid $color-primary;
+        &::after{
+            content:"";
+            position:absolute;
+            width:0%;
+            height:100%;
+            transition:.2s all ease-in-out;
+            transition-delay: .2s;
+            border-top:1px solid $color-primary;
+        }
+        &::before{
+            content:"";
+            position:absolute;
+            width:100%;
+            height:0%;
+            transition:.2s all ease-in-out;
+            border-right:1px solid $color-primary;
+        }
+    }
+}
+
+.input__text:focus ~ .input__border{
+    height:100%;
+    transition-delay:0s;
+}
+
+.input__text:focus ~ .input__border::after{
+    width:100%;
+}
+
+.input__text:focus ~ .input__border::before{
+    height:100%;
+    transition-delay: .4s;
+}

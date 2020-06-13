@@ -1,0 +1,23 @@
+//Abstracts
+@import "./sass/abstracts/functions";
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+
+//Base
+@import "./sass/base/base";
+@import "./sass/base/animations";
+@import "./sass/base/typography";
+@import "./sass/base/utilities";
+
+//Components
+@import "./components/addButton";
+@import "./components/footer";
+@import "./components/input";
+@import "./components/modal";
+@import "./components/modalButton";
+@import "./components/nav";
+@import "./components/playButton";
+@import "./components/seperator";
+@import "./components/sliderStyle";
+//Layout
+@import "./sass/layout/grid";

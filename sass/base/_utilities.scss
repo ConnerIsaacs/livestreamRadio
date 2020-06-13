@@ -1,0 +1,50 @@
+.shadow {
+    box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+}
+
+.margin_top {
+    margin-top:2rem;
+}
+
+.button_Primary {
+    background-image:$gradient-primary;
+    border-radius:100%;
+    box-shadow: 0rem .2rem .5rem rgba($color_black, .2);
+    transition: .2s transform;
+    text-align:center;
+    border:none;
+    color:$color-white;
+    margin:0rem 1rem 0rem 1rem;
+    backface-visibility: hidden;
+    position:relative;
+    &:hover{
+        cursor:pointer;
+        transform:scale(1.1);
+    }
+    &:active{
+        transform:scale(1);
+    }
+}
+
+.button_Secondary {
+    transition: .2s transform;
+    text-align:center;
+    border:none;
+    color:$color-black;
+    margin:0rem 1rem 0rem 1rem;
+    backface-visibility: hidden;
+    position:relative;
+    &:hover {
+        cursor:pointer;
+        transform:scale(1.1);
+    }
+    &:active{
+        transform:scale(1);
+    }
+}
+
+.noScale{
+    &:hover {
+        transform:scale(1);
+    }
+}

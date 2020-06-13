@@ -1,0 +1,58 @@
+.modal {
+    @include absoluteCenter;
+    width:100%;
+    height:0%;
+    display:flex;
+    z-index: 1001;
+    justify-content:center;
+    align-items:center;
+    transition: 0s height;
+    transition-delay: .8s;
+    &__overlay{
+        @include absoluteCenter;
+        width:0%;
+        height:5px;  
+        background-color:rgba($color-black, .8);
+        transition: .4s .6s width, .4s .3s height;
+    }
+
+    &__box{
+        position:relative;
+        width:50%;
+        height:50%;
+        background-color:$color-white;
+        transform: scale(0);
+        animation: .4s scaleOut ease-in-out forwards;
+        border-radius:20px;
+    }
+
+    &__text{
+        @include absoluteCenter;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    &__BgActive { 
+		width: 100%;
+        height: 100%;
+		transition:.4s width, .4s .3s height;
+    }
+
+    &__Active {
+		animation: .5s scaleIn ease-in-out forwards;
+        animation-delay:.5s;
+        box-shadow: 0 1rem 1rem rgba($color-black, .3);
+    }
+
+    &__containerActive {
+        height:100%;
+        transition-delay: 0s;
+    }
+
+    &__title{
+        width:60%;
+    }
+}

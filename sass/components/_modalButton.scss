@@ -1,0 +1,51 @@
+.modal__submitButton {
+    width:60%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    & a{
+        background-color:$color-primary;
+        width:40%;
+        height:30%;
+        color:white;
+        display: inline-block;
+        text-decoration:none;
+        text-transform:uppercase;
+        text-align:center;
+        margin-top:6rem;
+        padding: 1rem 1rem;
+        position:relative;
+        &:before, &:after {
+            position:absolute;
+            height:25px;
+            width:25px;
+            display:block;
+            transition:.4s all;
+            content:"";
+        }
+        
+        &:after {
+            left:-1rem;
+            top:-1rem;
+            border-top:1px solid $color-primary;
+            border-left:1px solid $color-primary;
+            z-index:-500;
+        }
+        
+        &:before {
+            bottom:-1rem;
+            right:-1rem;
+            border-bottom:1px solid $color-primary;
+            border-right:1px solid $color-primary;
+        }
+        
+        &:hover:before, &:hover:after {
+            width:90%;
+            height:90%;
+        }
+
+        &:active{
+            background-color: darken($color-primary, 5%);
+        }
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="./img/favicon.png">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Livestream Radio</title>
+        
+    </head>
+    <body>
+        <main>
+            <section class="header">
+                <div class="shadow row">
+                    <div class="col-1-of-3">
+
+                    </div>
+                    <div class="col-1-of-3">
+                        <h2 class="header__title">
+                            <span class="header__title--primary">Livestream</span><span class="header__title--secondary">Radio</span>
+                        </h2>
+                    </div>
+                    <div class="col-1-of-3">
+                       <ul class="navigation">
+                           <li class="navigation__item">
+                               <a href="#" class="navigation__link">Home</a>
+                           </li>
+                           <li class="navigation__item">
+                               <a href="#" class="navigation__link">Sets</a>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="modal">
+                <div class="modal__overlay">
+
+                </div>
+                <div class="modal__box">
+                    <div class="modal__text modal__text--1">
+                        <div class ="modal__title">
+                            <h2>
+                                <span class="modal__title--primary">Create a </span><span class="modal__title--secondary">Station</span>
+                            </h2>
+                            <div class="seperator"></div>
+                        </div>
+                        <div class="input__container input__container--1">
+                            <input class="input__text input__text--1" type="text" placeholder="Enter Station Name..."/>
+                            <div class="input__border input__border--1"></div>
+                        </div>
+                        <div class="input__container input__container--2">
+                            <input class="input__text input__text--2" type="text" placeholder="Enter the Youtube URL..."/>
+                            <div class="input__border input__border--2"></div>
+                        </div>
+                        <div class="modal__submitButton">
+                            <a href="#">Create Station!</a>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <section class="content">
+                <div class="margin_top row">
+                    <div class="col-4-of-4">
+                        <h3>Your Stations</h3>
+                        <button class="button_Primary addStation">+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h2>Currently Playing</h2>
+                        <div class="seperator"></div>
+                        <p>Nothing is currently Playing!</p>
+                    </div>
+                    <div class="col-1-of-2">
+                        <h2>Stations in this Set</h2>
+                        <div class="seperator"></div>
+                        <p>No set loaded!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="footerContent">
+                    <div class="row">
+                        <div class="col-1-of-3"></div>
+                        <div class="col-1-of-3">
+                            <div class="footerButtons">
+                                <div class="button_Secondary keyboardShortcuts">
+                                    <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="button_Secondary stepBack">
+                                    <i class="fa fa-step-backward" aria-hidden="true"></i>
+                                </div>
+                                <div class="button_Primary playButton">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </div>
+                                <div class="button_Secondary stepForward">
+                                    <i class="fa fa-step-forward" aria-hidden="true"></i>
+                                </div>
+                                <div class="button_Secondary volume noScale">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <input type="range" class="slider"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+<script src="js/index.js"></script>;
+</html>

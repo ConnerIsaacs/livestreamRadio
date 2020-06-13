@@ -1,0 +1,29 @@
+.navigation{
+    @include absoluteCenter;
+    list-style:none;
+    font-size:1.5rem;
+    &__item{
+        float:left;
+        &:not(:last-child){
+            margin-right:1rem;
+        }
+    }
+
+    &__link{
+        color:$color-black;
+        display:block;
+        text-decoration:none;
+        padding: 5px;
+        transition:.2s all;
+        &:hover {
+            margin-top:-2px;
+            cursor:pointer;
+        }
+        &::after{
+            width:100%;
+            height:100%;
+            content:"";
+            border-bottom:2px solid black;
+        }
+    }
+}

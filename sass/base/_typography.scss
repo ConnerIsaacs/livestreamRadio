@@ -1,0 +1,29 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.header__title {
+    @include absoluteCenter;
+    font-size: 2rem;
+    font-weight:500;
+}
+
+.modal__title--secondary, .header__title--secondary{
+    color: $color-primary;
+}
+h3 {
+    text-decoration:underline;
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
+h2{
+    font-weight:500;
+    font-size:3rem;
+    display:block;
+}
+
+p {
+    font-size:1.5rem;
+    margin-top:2rem;
+}
