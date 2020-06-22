@@ -21,8 +21,7 @@
         width:50%;
         height:50%;
         background-color:$color-white;
-        transform: scale(0);
-        animation: .4s scaleOut ease-in-out forwards;
+        transform:scale(0);
         border-radius:20px;
     }
 
@@ -45,6 +44,10 @@
 		animation: .5s scaleIn ease-in-out forwards;
         animation-delay:.5s;
         box-shadow: 0 1rem 1rem rgba($color-black, .3);
+    }
+
+    &__Inactive{
+        animation: .4s scaleOut ease-in-out forwards;
     }
 
     &__containerActive {

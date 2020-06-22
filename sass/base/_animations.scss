@@ -21,3 +21,14 @@
         transform:scale(0);
     }
 }
+
+@keyframes fadeOutToRight{
+    0% {
+        opacity: 1;
+        transform:translateX(0rem);
+    }
+    100% {
+        opacity:0;
+        transform:translateX(5rem);
+    }
+}

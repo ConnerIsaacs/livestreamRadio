@@ -11,6 +11,7 @@
 
 //Components
 @import "./components/addButton";
+@import "./components/currentlyPlaying";
 @import "./components/footer";
 @import "./components/input";
 @import "./components/modal";
@@ -19,5 +20,6 @@
 @import "./components/playButton";
 @import "./components/seperator";
 @import "./components/sliderStyle";
+@import "./components/stationButtons";
 //Layout
 @import "./sass/layout/grid";

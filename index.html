@@ -28,7 +28,7 @@
                                <a href="#" class="navigation__link">Home</a>
                            </li>
                            <li class="navigation__item">
-                               <a href="#" class="navigation__link">Sets</a>
+                               <a href="#" class="navigation__link" id="navigation__link--2">Sets</a>
                            </li>
                        </ul>
                     </div>
@@ -47,11 +47,11 @@
                             <div class="seperator"></div>
                         </div>
                         <div class="input__container input__container--1">
-                            <input class="input__text input__text--1" type="text" placeholder="Enter Station Name..."/>
+                            <input class="input__text input__text--1" id="stationName" type="text" placeholder="Enter Station Name..."/>
                             <div class="input__border input__border--1"></div>
                         </div>
                         <div class="input__container input__container--2">
-                            <input class="input__text input__text--2" type="text" placeholder="Enter the Youtube URL..."/>
+                            <input class="input__text input__text--2" id="stationURL" type="text" placeholder="Enter the Youtube URL..."/>
                             <div class="input__border input__border--2"></div>
                         </div>
                         <div class="modal__submitButton">
@@ -62,17 +62,16 @@
                 </div>
             </div>
             <section class="content">
-                <div class="margin_top row">
-                    <div class="col-4-of-4">
-                        <h3>Your Stations</h3>
-                        <button class="button_Primary addStation">+</button>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="margin_top row streamsView" id="streamsView">
+                    <button class="button_Primary addStation">+</button>
                     <div class="col-1-of-2">
                         <h2>Currently Playing</h2>
                         <div class="seperator"></div>
-                        <p>Nothing is currently Playing!</p>
+                        <div class="currentStream" id="currentStream">
+                            <p id="noCurrentStream">Nothing is currently Playing!</p>
+                            <div class="currentStream__container" id="currentStream__container">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h2>Stations in this Set</h2>
@@ -112,4 +111,6 @@
         </main>
 </body>
 <script src="js/index.js"></script>;
+<script src="js/modalButtonClick.js"></script>;
+<script src="js/switchViews.js"></script>;
 </html>
