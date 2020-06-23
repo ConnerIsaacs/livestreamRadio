@@ -1,4 +1,5 @@
 document.getElementsByClassName("addStation")[0].addEventListener("click", toggleModal);
+document.getElementsByClassName("modal__button")[0].addEventListener("click", toggleModal);
 document.getElementsByClassName("modal__overlay")[0].addEventListener("click", toggleModal);
 
 function toggleModal(){

@@ -44,6 +44,10 @@
 	width:100%;
 }
 
+.col-1-of-5{
+	width:calc((100% - #{$margin-horizontal} * 4) / 5);
+	background-color:orangered;
+}
 .header{
     margin-top:-3rem;
 }
