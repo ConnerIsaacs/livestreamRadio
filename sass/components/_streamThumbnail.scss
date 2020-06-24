@@ -9,7 +9,7 @@
     overflow:hidden;
     transition: .4s transform ease-in-out, .2s box-shadow ease-in-out;
     padding-bottom: 20px;
-    &:nth-child(4n-1){
+    &:nth-child(5n+1){
         margin-right:0;
     }
 
